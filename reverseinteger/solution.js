@@ -1,5 +1,4 @@
 const reverse = (x) => {
-    console.log(x)
     const neg = x < 0
     let num = neg ? (x * -1) : x
     let newX = neg ? '-' : ''
@@ -18,11 +17,10 @@ const reverse = (x) => {
             return 0
         }
     }
-
 }
 
-console.log(reverse(123))
-console.log(reverse(-123))
-console.log(reverse(120))
-console.log(reverse(0))
-console.log(reverse(1534236469))
+console.log(123, reverse(123))
+console.log(-123, reverse(-123))
+console.log(120, reverse(120))
+console.log(0, reverse(0))
+console.log(1534236469, reverse(1534236469))
