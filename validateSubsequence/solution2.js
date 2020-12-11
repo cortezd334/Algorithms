@@ -1,5 +1,10 @@
 const validateSubsequence = (array, subsequence) => {
-    
+    let sIdx = 0
+    for( const value of array){
+        if(sIdx === subsequence.length) break
+        if(subsequence[sIdx] === value) sIdx++
+    }
+    return sIdx === subsequence.length
 }
 
 console.log(validateSubsequence([5, 1, 22, 25, 6, -1, 8, 10], [1, 6, -1, 10]))
